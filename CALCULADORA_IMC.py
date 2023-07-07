@@ -94,7 +94,7 @@ while personas > 0:
             print(Fore.LIGHTRED_EX+"Debe escribir un numero positivo.")
             continue
         elif edad>122:
-            print(Fore.LIGHTRED_EX+"Deber escribir su verdadera edad.")
+            print(Fore.LIGHTRED_EX+"Debe escribir su verdadera edad.")
             continue
         else:
             break
@@ -106,13 +106,13 @@ while personas > 0:
         try:
             altura = float(input (Fore.LIGHTBLUE_EX+"Ingrese su altura en metros: "))
         except ValueError:
-            print(Fore.LIGHTRED_EX+"Debes escribir la altura correcta.")
+            print(Fore.LIGHTRED_EX+"Debe escribir la altura correcta.")
             continue
         if  altura<0:
-            print(Fore.LIGHTRED_EX+"Deber escribir un número positivo.")
+            print(Fore.LIGHTRED_EX+"Debe escribir un número positivo.")
             continue
         elif altura>2.72:
-            print(Fore.LIGHTRED_EX+"Debes escribir un número menor.")
+            print(Fore.LIGHTRED_EX+"Debe escribir un número menor.")
         else:
             break
     #-------------------------------------------------------------------------------------------------
@@ -122,13 +122,13 @@ while personas > 0:
         try:
             peso = float(input(Fore.LIGHTBLUE_EX+"Ingrese su peso en kilogramos:"))
         except ValueError:
-            print(Fore.LIGHTRED_EX+"Debes escribir el peso en kilogramos.")
+            print(Fore.LIGHTRED_EX+"Debe escribir el peso en kilogramos.")
             continue
         if  peso<0:
-            print(Fore.LIGHTRED_EX+"Deber escribir un número positivo.")
+            print(Fore.LIGHTRED_EX+"Debe escribir un número positivo.")
             continue
         elif peso>594.8:
-            print(Fore.LIGHTRED_EX+"Debes escribir un número menor.")
+            print(Fore.LIGHTRED_EX+"Debe escribir un número menor.")
         else:
             break
     #-------------------------------------------------------------------------------------------------
@@ -168,3 +168,27 @@ while personas > 0:
     #Se expresa esta formula para asi poder hacer que la condicion de nuestro while de personas ingresadas 
         #sean las que realmente queremos ingresar ya que si no se realiza se vuelve un ciclo infinito
     personas = personas - 1
+#---------------------------------------------------------------------------------------------------------
+#Esta sección es para que el programa no se cierre al instante de mostrar la pantalla de los valores ingresados
+print(Fore.LIGHTGREEN_EX+"\n\n\t\tMuchas gracias por usar la calculadora de IMC")
+
+while True:
+        try:
+            Salir = int(input(Fore.LIGHTBLUE_EX+"Para cerrar la calculadora escriba 1"))
+    
+        except ValueError:
+            print(Fore.LIGHTRED_EX+"Debe escribir 1 para salir")
+            continue
+        if Salir<0:
+            print(Fore.LIGHTRED_EX+"Debe escribir 1 para salir.")
+            continue
+        elif Salir>2:
+            print(Fore.LIGHTRED_EX+"Debe escribir 1 para salir.")
+            continue
+        else:
+            break
+#Reflexión:
+#       En esta fase del bootcamp pude aprender de forma eficiente los pasos para poder realizar el proyecto
+#       correspondiente por lo que me siento contento de lo logrado en la realización del mismo, la practica
+#       me permitió llegar a la meta de la realizacion de mi Calculadora de IMC y comprender la estructura
+#       con la que se compone.
