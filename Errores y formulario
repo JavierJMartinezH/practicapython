@@ -1,0 +1,28 @@
+numHuevos= 12
+
+#Opcion 1
+print("Tengo "+ str(numHuevos)+ " huevos.")
+
+#Opcion 2
+print("Tengo %s huevos." %(numHuevos))  #%s para decir que va una variable      %variable
+
+#Calcular la superficie o área de un cuadrado
+
+lado=int(input("Ingrese la medida del lado del cuadrado: "))
+superficie= lado * lado
+print("La suoperficie del cuadrado es: " + str(superficie))
+
+########################################################################
+
+#Formulario
+nombre= input("Introduce tu nombre: ")
+apellido= input("Introduce tu apellido: ")
+edad= int(input("introduce tu edad: "))
+correo= input("introduce tu correo electronico: ")
+telefono= input("Introduce tu telefono; ")
+
+print("Nombre: " + nombre)
+print("Apellido: " + apellido)
+print("Tengo: " + str(edad))
+print("Correo: " + correo)
+print("Telefono: " + telefono)
