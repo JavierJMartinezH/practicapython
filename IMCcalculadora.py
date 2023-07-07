@@ -147,7 +147,7 @@ while personas > 0:
     print(Fore.YELLOW+"IMC: " + str(IMC) )
 
     #-------------------------------------------------------------------------------------------------
-    #Estas son las validaciones que se realiza en el resultado para saber su condición
+    #Estas son las validaciones que se realiza en el resultado para saber su condición.
     if IMC >= 0 and IMC <= 15.99 :
         print (Fore.LIGHTRED_EX+"Delgadez severa")
     elif IMC >= 16.00 and IMC <= 16.99 :
