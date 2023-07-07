@@ -11,7 +11,7 @@ print(Fore.BLUE+"\n\tRealizado por:\n\t\tJavier José Martínez Hernández")
 #para ingresar mas personas.
 while True:
         try:
-            personas = int(input(Fore.GREEN+"\n¿A cuantas personas quiere calcular su IMC?"))
+            personas = int(input(Fore.GREEN+"\n¿A cuantas personas quiere calcular su IMC?   "))
     
         except ValueError:
             print(Fore.LIGHTRED_EX+"Debe escribir un número.")
@@ -20,7 +20,7 @@ while True:
             print(Fore.LIGHTRED_EX+"Debe escribir un número positivo,")
             continue
         elif personas>6:
-            print(Fore.LIGHTRED_EX+"Limitado a 6 personas por el Operado Javier")
+            print(Fore.LIGHTRED_EX+"Limitado a 6 personas por el Operador Javier")
             continue
         else:
             break
@@ -90,8 +90,8 @@ while personas > 0:
         except ValueError:
             print(Fore.LIGHTRED_EX+"Debe escribir su edad en número.")
             continue
-        if edad<0:
-            print(Fore.LIGHTRED_EX+"Debe escribir un numero positivo.")
+        if edad<=0:
+            print(Fore.LIGHTRED_EX+"Debe escribir un numero positivo o mayor a 0.")
             continue
         elif edad>122:
             print(Fore.LIGHTRED_EX+"Debe escribir su verdadera edad.")
@@ -108,8 +108,8 @@ while personas > 0:
         except ValueError:
             print(Fore.LIGHTRED_EX+"Debe escribir la altura correcta.")
             continue
-        if  altura<0:
-            print(Fore.LIGHTRED_EX+"Debe escribir un número positivo.")
+        if  altura<=0:
+            print(Fore.LIGHTRED_EX+"Debe escribir un número positivo o mayor a cero.")
             continue
         elif altura>2.72:
             print(Fore.LIGHTRED_EX+"Debe escribir un número menor a 2.72.")
@@ -124,8 +124,8 @@ while personas > 0:
         except ValueError:
             print(Fore.LIGHTRED_EX+"Debe escribir el peso en kilogramos.")
             continue
-        if  peso<0:
-            print(Fore.LIGHTRED_EX+"Debe escribir un número positivo.")
+        if  peso<=0:
+            print(Fore.LIGHTRED_EX+"Debe escribir un número positivo o mayor a cero.")
             continue
         elif peso>594.8:
             print(Fore.LIGHTRED_EX+"Debe escribir un número menor.")
